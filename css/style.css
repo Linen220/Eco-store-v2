@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  background-color: #FFEFE7;
+}
+
+nav {
+  width: 100%;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-title {
+  text-decoration: none;
+  color: #7C6A0A;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+nav .nav-icons {
+  list-style: none;
+}
+nav .nav-icons .nav-img {
+  display: block;
+}
+
+article {
+  width: 100%;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+}
+article .impact-section {
+  width: 100%;
+  color: #7C6A0A;
+}
+article .impact-section h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+article .impact-section p {
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+.inactive {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+nav {
+    width: 100%;
+    padding-block: 1.25rem;
+    padding-inline: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-title {
+        text-decoration: none;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+    .nav-icons {
+        list-style: none;
+        .nav-img {
+            display: block;
+        }
+    }
+}

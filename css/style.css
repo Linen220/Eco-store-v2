@@ -9,10 +9,6 @@ body {
   background-color: #FFEFE7;
 }
 
-.inactive {
-  display: none;
-}
-
 nav {
   width: 100%;
   padding-block: 1.25rem;

@@ -1,0 +1,27 @@
+.info-section {
+    width: 100%;
+    padding-block: 1.25rem;
+    padding-inline: 1.25rem;
+    h2 {
+        color: $text-color;
+        font-weight: 500;
+        font-size: 1.4rem;
+        padding-bottom: 4rem;
+    }
+    .mission-section {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .mission {
+            text-align: center;
+            img {
+                width: 100px;
+            }
+            p {
+                color: #E86424;
+                font-size: .9rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

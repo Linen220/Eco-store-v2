@@ -1,0 +1,63 @@
+.product-section {
+    width: 100%;
+    padding-block: 1.25rem;
+    padding-inline: 1.25rem;
+    .healtcare {
+        padding-block: 1.8rem;
+        color: $text-color;
+        h2 {
+            font-family: $font-section;
+            font-weight: 500;
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+        }
+        .card-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.7rem;
+            padding-block: 1.5rem;
+
+            // Estas 3 lineas importan para el scroll
+            overflow-x: auto;
+            overscroll-behavior-x: contain; 
+            scroll-snap-type: x proximity;
+            .product-card {
+                // max-height: 400px;
+                position: relative;
+                max-width: 300px;
+                min-width: 220px;
+                padding-inline: 1.5rem;
+                padding-block: 2.5rem;
+                background-color: $secondary-color;
+                // Y esta más
+                // scroll-snap-align: center;
+                img {
+                    display: block;
+                    height: 250px;
+                    width: 100%;
+                }
+                h3 {
+                    padding-top: 1rem;
+                }
+                p {
+                    font-size: .9rem;
+                }
+                .icon {
+                    position: absolute;
+                    top: .5rem;
+                    right: .4rem;
+                }
+            }
+
+        }
+    }
+    .furniture {
+        @extend .healtcare;
+        .card-section {
+            .product-card {
+                color: white;
+                background-color: $tertiary-color;
+            }
+        }
+    }
+}

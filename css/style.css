@@ -77,25 +77,26 @@ article .impact-image img {
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
 }
-.product-section .healtcare {
-  padding-block: 1.25rem;
+.product-section .healtcare, .product-section .furniture {
+  padding-block: 1.8rem;
   color: #7C6A0A;
 }
-.product-section .healtcare h2 {
+.product-section .healtcare h2, .product-section .furniture h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
-  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
 }
-.product-section .healtcare .card-section {
+.product-section .healtcare .card-section, .product-section .furniture .card-section {
   display: flex;
+  justify-content: space-between;
   gap: 1.7rem;
   padding-block: 1.5rem;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
-.product-section .healtcare .card-section .product-card {
+.product-section .healtcare .card-section .product-card, .product-section .furniture .card-section .product-card {
   position: relative;
   max-width: 300px;
   min-width: 220px;
@@ -103,21 +104,25 @@ article .impact-image img {
   padding-block: 2.5rem;
   background-color: #FFDAC6;
 }
-.product-section .healtcare .card-section .product-card img {
+.product-section .healtcare .card-section .product-card img, .product-section .furniture .card-section .product-card img {
   display: block;
   height: 250px;
   width: 100%;
 }
-.product-section .healtcare .card-section .product-card h3 {
+.product-section .healtcare .card-section .product-card h3, .product-section .furniture .card-section .product-card h3 {
   padding-top: 1rem;
 }
-.product-section .healtcare .card-section .product-card p {
+.product-section .healtcare .card-section .product-card p, .product-section .furniture .card-section .product-card p {
   font-size: 0.9rem;
 }
-.product-section .healtcare .card-section .product-card .icon {
+.product-section .healtcare .card-section .product-card .icon, .product-section .furniture .card-section .product-card .icon {
   position: absolute;
   top: 0.5rem;
   right: 0.4rem;
+}
+.product-section .furniture .card-section .product-card {
+  color: white;
+  background-color: #BABD8D;
 }
 
 .inactive {

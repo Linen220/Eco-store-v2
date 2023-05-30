@@ -93,18 +93,20 @@ article {
     padding-block: 1.25rem;
     padding-inline: 1.25rem;
     .healtcare {
-        padding-block: 1.25rem;
+        padding-block: 1.8rem;
         color: $text-color;
         h2 {
             font-family: $font-section;
             font-weight: 500;
-            font-size: 1.25rem;
-            padding-bottom: 2rem;
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
         }
         .card-section {
             display: flex;
+            justify-content: space-between;
             gap: 1.7rem;
             padding-block: 1.5rem;
+            
             // Estas 3 lineas importan para el scroll
             overflow-x: auto;
             overscroll-behavior-x: contain; 
@@ -137,6 +139,15 @@ article {
                 }
             }
 
+        }
+    }
+    .furniture {
+        @extend .healtcare;
+        .card-section {
+            .product-card {
+                color: white;
+                background-color: $tertiary-color;
+            }
         }
     }
 }

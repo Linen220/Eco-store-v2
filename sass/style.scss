@@ -103,16 +103,22 @@ article {
         }
         .card-section {
             display: flex;
-            gap: 1rem;
+            gap: 1.7rem;
             padding-block: 1.5rem;
+            // Estas 3 lineas importan para el scroll
+            overflow-x: auto;
+            overscroll-behavior-x: contain; 
+            scroll-snap-type: x proximity;
             .product-card {
                 // max-height: 400px;
                 position: relative;
                 max-width: 300px;
-                min-width: 240px;
+                min-width: 220px;
                 padding-inline: 1.5rem;
                 padding-block: 2.5rem;
                 background-color: $secondary-color;
+                // Y esta más
+                // scroll-snap-align: center;
                 img {
                     display: block;
                     height: 250px;
@@ -122,7 +128,7 @@ article {
                     padding-top: 1rem;
                 }
                 p {
-                    font-size: .8rem;
+                    font-size: .9rem;
                 }
                 .icon {
                     position: absolute;

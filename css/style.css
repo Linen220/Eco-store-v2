@@ -89,13 +89,16 @@ article .impact-image img {
 }
 .product-section .healtcare .card-section {
   display: flex;
-  gap: 1rem;
+  gap: 1.7rem;
   padding-block: 1.5rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 .product-section .healtcare .card-section .product-card {
   position: relative;
   max-width: 300px;
-  min-width: 240px;
+  min-width: 220px;
   padding-inline: 1.5rem;
   padding-block: 2.5rem;
   background-color: #FFDAC6;
@@ -109,7 +112,7 @@ article .impact-image img {
   padding-top: 1rem;
 }
 .product-section .healtcare .card-section .product-card p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .product-section .healtcare .card-section .product-card .icon {
   position: absolute;

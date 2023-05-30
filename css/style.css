@@ -31,12 +31,17 @@ nav .nav-icons .nav-img {
 }
 
 article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 100%;
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
 }
 article .impact-section {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  order: 1;
   color: #7C6A0A;
 }
 article .impact-section h1 {
@@ -47,7 +52,71 @@ article .impact-section p {
   font-weight: 400;
   font-size: 0.7rem;
   line-height: 1rem;
+  padding: 1rem 0;
 }
+article .impact-section button {
+  align-self: center;
+  border-style: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background-color: #FA9500;
+}
+article .impact-image {
+  order: 0;
+}
+article .impact-image img {
+  display: block;
+  height: 360px;
+  width: 100%;
+}
+
+.product-section {
+  width: 100%;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+}
+.product-section .healtcare {
+  padding-block: 1.25rem;
+  color: #7C6A0A;
+}
+.product-section .healtcare h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+}
+.product-section .healtcare .card-section {
+  display: flex;
+  gap: 1rem;
+  padding-block: 1.5rem;
+}
+.product-section .healtcare .card-section .product-card {
+  position: relative;
+  max-width: 300px;
+  min-width: 240px;
+  padding-inline: 1.5rem;
+  padding-block: 2.5rem;
+  background-color: #FFDAC6;
+}
+.product-section .healtcare .card-section .product-card img {
+  display: block;
+  height: 250px;
+  width: 100%;
+}
+.product-section .healtcare .card-section .product-card h3 {
+  padding-top: 1rem;
+}
+.product-section .healtcare .card-section .product-card p {
+  font-size: 0.8rem;
+}
+.product-section .healtcare .card-section .product-card .icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.4rem;
+}
+
 .inactive {
   display: none;
 }

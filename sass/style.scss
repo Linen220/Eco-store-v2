@@ -24,6 +24,10 @@ body {
     background-color: $primary-color;
 }
 
+.inactive {
+    display: none;
+}
+
 nav {
     width: 100%;
     padding-block: 1.25rem;
@@ -237,7 +241,32 @@ article {
     }
 }
 
-
-.inactive {
-    display: none;
+footer {
+    width: 100%;
+    padding-block: 1.5rem;
+    padding-inline: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    background-color: $quaternary-color;
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
+

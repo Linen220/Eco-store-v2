@@ -9,6 +9,10 @@ body {
   background-color: #FFEFE7;
 }
 
+.inactive {
+  display: none;
+}
+
 nav {
   width: 100%;
   padding-block: 1.25rem;
@@ -208,8 +212,33 @@ article .impact-image img {
   font-size: 0.8rem;
 }
 
-.inactive {
-  display: none;
+footer {
+  width: 100%;
+  padding-block: 1.5rem;
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  background-color: #FA9500;
+}
+footer h3, footer .map p, .map footer p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

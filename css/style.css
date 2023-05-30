@@ -109,7 +109,7 @@ article .impact-image img {
   height: 250px;
   width: 100%;
 }
-.product-section .healtcare .card-section .product-card h3, .product-section .furniture .card-section .product-card h3 {
+.product-section .healtcare .card-section .product-card h3, .product-section .healtcare .card-section .product-card .map p, .map .product-section .healtcare .card-section .product-card p, .product-section .furniture .card-section .product-card h3, .product-section .furniture .card-section .product-card .map p, .map .product-section .furniture .card-section .product-card p {
   padding-top: 1rem;
 }
 .product-section .healtcare .card-section .product-card p, .product-section .furniture .card-section .product-card p {
@@ -123,6 +123,89 @@ article .impact-image img {
 .product-section .furniture .card-section .product-card {
   color: white;
   background-color: #BABD8D;
+}
+
+.info-section {
+  width: 100%;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+}
+.info-section h2 {
+  color: #7C6A0A;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding-bottom: 4rem;
+}
+.info-section .mission-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.info-section .mission-section .mission {
+  text-align: center;
+}
+.info-section .mission-section .mission img {
+  width: 100px;
+}
+.info-section .mission-section .mission p {
+  color: #E86424;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.gallery {
+  width: 100%;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+}
+.gallery h2 {
+  color: #7C6A0A;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}
+.gallery .gallery-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.gallery .gallery-section img {
+  display: block;
+  border-radius: 12px;
+  width: auto;
+  height: 300px;
+}
+
+.map {
+  width: 100%;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+}
+.map h2 {
+  color: #7C6A0A;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}
+.map .map-image {
+  width: 200px;
+}
+.map .map-image img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.map h3, .map p {
+  color: #E86424;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+}
+.map p {
+  font-size: 0.8rem;
 }
 
 .inactive {

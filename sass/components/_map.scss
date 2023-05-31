@@ -2,11 +2,17 @@
     width: 100%;
     padding-block: 1.25rem;
     padding-inline: 1.25rem;
+    @include desktop {
+        padding-inline: 3rem;
+    }
     h2 {
         color: $text-color;
         font-weight: 500;
         font-size: 1.4rem;
         padding: 2rem 0;
+        @include desktop {
+            font-size: 1.8rem;
+        }
     }
     .map-image {
         width: 200px;
@@ -16,6 +22,9 @@
             height: 400px;
             object-fit: cover;
             object-position: center;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
     h3 {
@@ -27,5 +36,6 @@
     p {
         @extend h3;
         font-size: .8rem;
+        padding-bottom: 4rem;
     }
 }

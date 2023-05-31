@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,7 @@ nav {
   nav {
     padding-block: 2rem;
     padding-inline: 3rem;
+    height: 10vh;
   }
 }
 nav .nav-title {
@@ -66,6 +68,7 @@ article {
     padding-inline: 3rem;
     flex-direction: row;
     align-items: center;
+    height: 90vh;
   }
 }
 article .impact-section {
@@ -104,17 +107,20 @@ article .impact-section p {
     width: 80%;
   }
 }
-article .impact-section button {
+article .impact-section a {
+  text-decoration: none;
   align-self: center;
-  border-style: none;
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   font-weight: bold;
   color: white;
   background-color: #FA9500;
 }
+article .impact-section a:hover {
+  background-color: black;
+}
 @media screen and (min-width: 650px) {
-  article .impact-section button {
+  article .impact-section a {
     align-self: flex-start;
     font-size: 1.25rem;
   }
@@ -159,6 +165,11 @@ article .impact-image img {
   font-weight: 500;
   font-size: 1.4rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 650px) {
+  .product-section .healtcare h2, .product-section .furniture h2 {
+    font-size: 1.8rem;
+  }
 }
 .product-section .healtcare .card-section, .product-section .furniture .card-section {
   display: flex;
@@ -221,27 +232,61 @@ article .impact-image img {
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
 }
+@media screen and (min-width: 650px) {
+  .info-section {
+    padding-inline: 3rem;
+  }
+}
 .info-section h2 {
   color: #7C6A0A;
   font-weight: 500;
   font-size: 1.4rem;
   padding-bottom: 4rem;
 }
+@media screen and (min-width: 650px) {
+  .info-section h2 {
+    font-size: 1.8rem;
+  }
+}
 .info-section .mission-section {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
+@media screen and (min-width: 650px) {
+  .info-section .mission-section {
+    flex-direction: row;
+    width: 70vw;
+    margin: 0 auto;
+  }
+}
 .info-section .mission-section .mission {
   text-align: center;
 }
+@media screen and (min-width: 650px) {
+  .info-section .mission-section .mission {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+}
 .info-section .mission-section .mission img {
   width: 100px;
+}
+@media screen and (min-width: 650px) {
+  .info-section .mission-section .mission img {
+    width: 10vw;
+  }
 }
 .info-section .mission-section .mission p {
   color: #E86424;
   font-size: 0.9rem;
   font-weight: 500;
+}
+@media screen and (min-width: 650px) {
+  .info-section .mission-section .mission p {
+    font-size: 1rem;
+  }
 }
 
 .gallery {
@@ -249,11 +294,21 @@ article .impact-image img {
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
 }
+@media screen and (min-width: 650px) {
+  .gallery {
+    padding-inline: 3rem;
+  }
+}
 .gallery h2 {
   color: #7C6A0A;
   font-weight: 500;
   font-size: 1.4rem;
   padding: 2rem 0;
+}
+@media screen and (min-width: 650px) {
+  .gallery h2 {
+    font-size: 1.8rem;
+  }
 }
 .gallery .gallery-section {
   display: flex;
@@ -261,11 +316,28 @@ article .impact-image img {
   justify-content: center;
   gap: 2rem;
 }
+@media screen and (min-width: 650px) {
+  .gallery .gallery-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .gallery .gallery-section img {
   display: block;
   border-radius: 12px;
   width: auto;
   height: 300px;
+}
+.gallery .gallery-section img:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 650px) {
+  .gallery .gallery-section img {
+    width: 25vw;
+    height: 50vh;
+    object-fit: cover;
+  }
 }
 
 .map {
@@ -273,11 +345,21 @@ article .impact-image img {
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
 }
+@media screen and (min-width: 650px) {
+  .map {
+    padding-inline: 3rem;
+  }
+}
 .map h2 {
   color: #7C6A0A;
   font-weight: 500;
   font-size: 1.4rem;
   padding: 2rem 0;
+}
+@media screen and (min-width: 650px) {
+  .map h2 {
+    font-size: 1.8rem;
+  }
 }
 .map .map-image {
   width: 200px;
@@ -289,6 +371,9 @@ article .impact-image img {
   object-fit: cover;
   object-position: center;
 }
+.map .map-image img:hover {
+  transform: scale(1.1);
+}
 .map h3, .map p {
   color: #E86424;
   font-weight: 400;
@@ -297,6 +382,7 @@ article .impact-image img {
 }
 .map p {
   font-size: 0.8rem;
+  padding-bottom: 4rem;
 }
 
 footer {
@@ -308,6 +394,11 @@ footer {
   gap: 1rem;
   color: white;
   background-color: #FA9500;
+}
+@media screen and (min-width: 650px) {
+  footer {
+    padding-inline: 3rem;
+  }
 }
 footer h3, footer .map p, .map footer p {
   font-size: 1.25rem;

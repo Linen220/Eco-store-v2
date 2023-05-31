@@ -9,6 +9,7 @@ article {
         padding-inline: 3rem;
         flex-direction: row;
         align-items: center;
+        height: 90vh;
     }
     .impact-section {
         display: flex;
@@ -39,14 +40,17 @@ article {
                 width: 80%;
             }
         }
-        button {
+        a {
+            text-decoration: none;
             align-self: center;
-            border-style: none;
             padding: 0.8rem 1.5rem;
             border-radius: 2rem;
             font-weight: bold;
             color: white;
             background-color: $quaternary-color;
+            &:hover {
+                background-color: black;
+            }
             @include desktop {
                 align-self: flex-start;
                 font-size: 1.25rem;

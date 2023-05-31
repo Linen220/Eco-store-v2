@@ -2,25 +2,47 @@
     width: 100%;
     padding-block: 1.25rem;
     padding-inline: 1.25rem;
+    @include desktop {
+        padding-inline: 3rem;
+    }
     h2 {
         color: $text-color;
         font-weight: 500;
         font-size: 1.4rem;
         padding-bottom: 4rem;
+        @include desktop {
+            font-size: 1.8rem;
+        }
     }
     .mission-section {
         display: flex;
         flex-direction: column;
         gap: 4rem;
+        @include desktop {
+            flex-direction: row;
+            width: 70vw;
+            margin: 0 auto;
+        }
         .mission {
             text-align: center;
+            @include desktop {
+                display: flex;
+                align-items: center;
+                width: 50%;
+            }
             img {
                 width: 100px;
+                @include desktop {
+                    width: 10vw;
+                }
             }
             p {
                 color: #E86424;
                 font-size: .9rem;
                 font-weight: 500;
+                @include desktop {
+                    font-size: 1rem;
+                }
             }
         }
     }

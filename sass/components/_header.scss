@@ -5,6 +5,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include desktop {
+        padding-block: 2rem;
+        padding-inline: 3rem;
+    }
     .nav-title {
         text-decoration: none;
         color: $text-color;
@@ -13,6 +17,19 @@ nav {
     }
     .nav-icons {
         list-style: none;
+        @include desktop {
+            display: flex;
+            gap: 1.25rem;
+            .menu {
+                display: none;
+            }
+        }
+        .profile, .heart-icon, .shopping {
+            display: none;
+            @include desktop {
+                display: block;
+            }
+        }
         .nav-img {
             display: block;
         }

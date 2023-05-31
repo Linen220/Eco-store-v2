@@ -17,6 +17,12 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 650px) {
+  nav {
+    padding-block: 2rem;
+    padding-inline: 3rem;
+  }
+}
 nav .nav-title {
   text-decoration: none;
   color: #7C6A0A;
@@ -25,6 +31,23 @@ nav .nav-title {
 }
 nav .nav-icons {
   list-style: none;
+}
+@media screen and (min-width: 650px) {
+  nav .nav-icons {
+    display: flex;
+    gap: 1.25rem;
+  }
+  nav .nav-icons .menu {
+    display: none;
+  }
+}
+nav .nav-icons .profile, nav .nav-icons .heart-icon, nav .nav-icons .shopping {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  nav .nav-icons .profile, nav .nav-icons .heart-icon, nav .nav-icons .shopping {
+    display: block;
+  }
 }
 nav .nav-icons .nav-img {
   display: block;
@@ -38,15 +61,35 @@ article {
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
 }
+@media screen and (min-width: 650px) {
+  article {
+    padding-inline: 3rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 article .impact-section {
   display: flex;
   flex-direction: column;
   order: 1;
   color: #7C6A0A;
 }
+@media screen and (min-width: 650px) {
+  article .impact-section {
+    gap: 2rem;
+    padding-block-start: 1rem;
+    order: 0;
+    width: 60%;
+  }
+}
 article .impact-section h1 {
   font-weight: 600;
   font-size: 1.8rem;
+}
+@media screen and (min-width: 650px) {
+  article .impact-section h1 {
+    font-size: 3rem;
+  }
 }
 article .impact-section p {
   font-weight: 400;
@@ -54,28 +97,58 @@ article .impact-section p {
   line-height: 1rem;
   padding: 1rem 0;
 }
+@media screen and (min-width: 650px) {
+  article .impact-section p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 80%;
+  }
+}
 article .impact-section button {
   align-self: center;
   border-style: none;
   padding: 0.8rem 1.5rem;
-  border-radius: 1.25rem;
+  border-radius: 2rem;
   font-weight: bold;
   color: white;
   background-color: #FA9500;
 }
+@media screen and (min-width: 650px) {
+  article .impact-section button {
+    align-self: flex-start;
+    font-size: 1.25rem;
+  }
+}
 article .impact-image {
   order: 0;
+}
+@media screen and (min-width: 650px) {
+  article .impact-image {
+    order: 1;
+    width: 40%;
+  }
 }
 article .impact-image img {
   display: block;
   height: 360px;
   width: 100%;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 650px) {
+  article .impact-image img {
+    height: 70vh;
+  }
 }
 
 .product-section {
   width: 100%;
   padding-block: 1.25rem;
   padding-inline: 1.25rem;
+}
+@media screen and (min-width: 650px) {
+  .product-section {
+    padding-inline: 3rem;
+  }
 }
 .product-section .healtcare, .product-section .furniture {
   padding-block: 1.8rem;
@@ -96,6 +169,13 @@ article .impact-image img {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
+@media screen and (min-width: 650px) {
+  .product-section .healtcare .card-section, .product-section .furniture .card-section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
+  }
+}
 .product-section .healtcare .card-section .product-card, .product-section .furniture .card-section .product-card {
   position: relative;
   max-width: 300px;
@@ -103,6 +183,11 @@ article .impact-image img {
   padding-inline: 1.5rem;
   padding-block: 2.5rem;
   background-color: #FFDAC6;
+}
+@media screen and (min-width: 650px) {
+  .product-section .healtcare .card-section .product-card, .product-section .furniture .card-section .product-card {
+    width: 40%;
+  }
 }
 .product-section .healtcare .card-section .product-card img, .product-section .furniture .card-section .product-card img {
   display: block;
@@ -120,9 +205,15 @@ article .impact-image img {
   top: 0.5rem;
   right: 0.4rem;
 }
+.product-section .healtcare .card-section .product-card .icon path:hover, .product-section .furniture .card-section .product-card .icon path:hover {
+  fill: #7C6A0A;
+}
 .product-section .furniture .card-section .product-card {
   color: white;
   background-color: #BABD8D;
+}
+.product-section .furniture .card-section .product-card .icon path:hover {
+  fill: white;
 }
 
 .info-section {

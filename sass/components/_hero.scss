@@ -5,37 +5,68 @@ article {
     width: 100%;
     padding-block: 1.25rem;
     padding-inline: 1.25rem;
+    @include desktop {
+        padding-inline: 3rem;
+        flex-direction: row;
+        align-items: center;
+    }
     .impact-section {
         display: flex;
         flex-direction: column;
         order: 1;
         color: $text-color;
+        @include desktop {
+            gap:2rem;
+            padding-block-start: 1rem;
+            order: 0;
+            width: 60%;
+        }
         h1 {
             font-weight: 600;
             font-size: 1.8rem;
+            @include desktop {
+                font-size: 3rem;
+            }
         }
         p {
             font-weight: 400;
             font-size: .7rem;
             line-height: 1rem;
             padding: 1rem 0;
+            @include desktop {
+                font-size: 1.25rem;
+                line-height: 2rem;
+                width: 80%;
+            }
         }
         button {
             align-self: center;
             border-style: none;
             padding: 0.8rem 1.5rem;
-            border-radius: 1.25rem;
+            border-radius: 2rem;
             font-weight: bold;
             color: white;
             background-color: $quaternary-color;
+            @include desktop {
+                align-self: flex-start;
+                font-size: 1.25rem;
+            }
         }
     }
     .impact-image {
         order: 0;
+        @include desktop {
+            order: 1;
+            width: 40%;
+        }
         img {
             display: block;
             height: 360px;
             width: 100%;
+            border-radius: 1rem;
+            @include desktop {
+                height: 70vh;
+            }
         }
     }
 }

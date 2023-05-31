@@ -2,6 +2,9 @@
     width: 100%;
     padding-block: 1.25rem;
     padding-inline: 1.25rem;
+    @include desktop {
+        padding-inline: 3rem;
+    }
     .healtcare {
         padding-block: 1.8rem;
         color: $text-color;
@@ -16,11 +19,18 @@
             justify-content: space-between;
             gap: 1.7rem;
             padding-block: 1.5rem;
-
+            
             // Estas 3 lineas importan para el scroll
             overflow-x: auto;
             overscroll-behavior-x: contain; 
             scroll-snap-type: x proximity;
+
+            @include desktop {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 5rem;
+
+            }
             .product-card {
                 // max-height: 400px;
                 position: relative;
@@ -31,6 +41,9 @@
                 background-color: $secondary-color;
                 // Y esta más
                 // scroll-snap-align: center;
+                @include desktop {
+                    width: 40%;
+                }
                 img {
                     display: block;
                     height: 250px;
@@ -46,6 +59,10 @@
                     position: absolute;
                     top: .5rem;
                     right: .4rem;
+
+                    path:hover{
+                        fill: $text-color;
+                    } 
                 }
             }
 
@@ -57,6 +74,11 @@
             .product-card {
                 color: white;
                 background-color: $tertiary-color;
+                .icon {
+                    path:hover {
+                        fill: white;
+                    } 
+                }
             }
         }
     }
